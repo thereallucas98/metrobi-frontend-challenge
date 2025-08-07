@@ -1,0 +1,49 @@
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Questão 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const App = () => {
+        return (
+          <div className="container">
+            <header className="header">Header</header>
+
+            <section className="top">
+              <article className="hero">Hero</article>
+              <main className="main-content">Main Content</main>
+            </section>
+
+            <section className="middle">
+              <aside className="sidebar">Sidebar</aside>
+              <div className="extra-content">Extra Content</div>
+            </section>
+
+            <section className="bottom">
+              <div className="related-images">Related Images</div>
+              <div className="related-posts">Related Posts</div>
+            </section>
+
+            <footer className="footer">Footer</footer>
+          </div>
+        );
+      };
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+    </script>
+  </body>
+</html>
