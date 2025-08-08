@@ -1,6 +1,11 @@
-function generateIntegerArray(length, min = 1, max = 100, allowDuplicates = true) {
-  if (!allowDuplicates && (max - min + 1) < length) {
-    throw new Error('Put more items in the list')
+function generateIntegerArray(
+  length,
+  min = 1,
+  max = 100,
+  allowDuplicates = true
+) {
+  if (!allowDuplicates && max - min + 1 < length) {
+    throw new Error("Put more items in the list");
   }
 
   const result = [];

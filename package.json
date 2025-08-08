@@ -6,12 +6,10 @@
   "scripts": {
     "q1": "node src/questions/question-1.js",
     "q2": "node src/questions/question-2.js",
-    "q3": "node src/questions/question-3.js",
     "q4": "node src/questions/question-4.js",
-    "q5": "node src/questions/question-5.js",
     "q6": "node src/questions/question-6.js",
     "q7": "node src/questions/question-7.js",
-    "react-server": "node src/server.js"
+    "server": "node src/server.js"
   },
   "keywords": [],
   "author": "",

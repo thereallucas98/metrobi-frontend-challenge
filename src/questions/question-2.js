@@ -1,12 +1,14 @@
-const generateIntegerArray = require("../utils/generate-integer-array")
-const wait = require("../utils/wait")
+const generateIntegerArray = require("../utils/generate-integer-array");
+const wait = require("../utils/wait");
 
 /**
  * Write an async javascript function that writes every item in any given array with 1, 2, 4, 8,
    etc., seconds apart.
  */
 
-console.log("1# QUESTION - Write an async javascript function that writes every item in any given array with 1, 2, 4, 8, etc., seconds apart.")
+console.log(
+  "1# QUESTION - Write an async javascript function that writes every item in any given array with 1, 2, 4, 8, etc., seconds apart."
+);
 
 async function printWithIncreasingDelay(items) {
   let delayInSeconds = 1;
@@ -20,7 +22,7 @@ async function printWithIncreasingDelay(items) {
 
 (async () => {
   const items = generateIntegerArray(5, 1, 10, false);
-  console.log('Starting...');
+  console.log("Starting...");
   await printWithIncreasingDelay(items);
-  console.log('Done.');
+  console.log("Done.");
 })();

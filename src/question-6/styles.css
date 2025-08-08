@@ -1,32 +1,33 @@
- body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      background: #f4f4f4;
-      font-family: sans-serif;
-    }
-    .world {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(to right, #b2fefa, #0ed2f7);
-    }
-    .achilles, .tortoise {
-      position: absolute;
-      bottom: 50px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 40px;
-      font-weight: bold;
-      color: white;
-    }
-    .achilles {
-      background: red;
-      left: 0;
-    }
-    .tortoise {
-      background: green;
-      left: 20%;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #f4f4f4;
+  font-family: sans-serif;
+}
+.world {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #b2fefa, #0ed2f7);
+}
+.achilles,
+.tortoise {
+  position: absolute;
+  bottom: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: white;
+}
+.achilles {
+  background: red;
+  left: 0;
+}
+.tortoise {
+  background: green;
+  left: 20%;
+}

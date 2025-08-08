@@ -6,7 +6,7 @@
 
 console.log(`#4 QUESTION - Write an efficient method that tells us whether or not an input string brackets ("{", "}",
 "(", ")", "[", "]") opened and closed properly. Example: “{[]}” => true, “{(])}” => false,
-“{([)]}” => false`)
+“{([)]}” => false`);
 
 function isValidBrackets(str) {
   const stack = [];
@@ -14,21 +14,21 @@ function isValidBrackets(str) {
   for (let i = 0; i < str.length; i++) {
     const char = str[i];
 
-    if (char === '(' || char === '[' || char === '{') {
+    if (char === "(" || char === "[" || char === "{") {
       stack.push(char);
-    } else if (char === ')') {
+    } else if (char === ")") {
       const last = stack.pop();
-      if (last !== '(') {
+      if (last !== "(") {
         return false;
       }
-    } else if (char === ']') {
+    } else if (char === "]") {
       const last = stack.pop();
-      if (last !== '[') {
+      if (last !== "[") {
         return false;
       }
-    } else if (char === '}') {
+    } else if (char === "}") {
       const last = stack.pop();
-      if (last !== '{') {
+      if (last !== "{") {
         return false;
       }
     }
