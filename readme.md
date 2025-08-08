@@ -29,7 +29,7 @@
 ## 🚀 How to Run
 
 ### 1. Node Version
-```nvm use 20.8.0``
+```nvm use 20.8.0```
 
 ### 2. Install Dependencies
 ```bash
